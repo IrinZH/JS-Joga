@@ -1,6 +1,7 @@
 * {
   background-color: pink;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .wrapper{
   display: flex;
@@ -8,7 +9,7 @@
   align-content: center;
   margin: auto auto;
   max-width: 720px;
-  min-height: 200пшpx;
+  min-height: 150px;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
 }

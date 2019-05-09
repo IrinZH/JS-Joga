@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
       clock.innerHTML = hours + ":" + minutes + ":" + seconds;
   }
-  setInterval(startTime, 500);
+  setInterval(startTime, 1000);
   
 });
 
