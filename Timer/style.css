@@ -1,0 +1,21 @@
+* {
+  background-color: pink;
+  box-sizing: border-box;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto auto;
+  max-width: 720px;
+  min-height: 200пшpx;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.timer{
+  margin-top: auto;
+  margin-bottom: auto;
+  color: white;
+  font-size: 100px;
+  text-align: center;
+}
