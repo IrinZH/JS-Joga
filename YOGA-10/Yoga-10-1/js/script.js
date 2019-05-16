@@ -1,6 +1,6 @@
 //1) Привести свой проект в соответствие с ES6 (в проекте Yoga, то, что можно преобразовать)
 
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', () => {   // window.addEventListener('DOMContentLoaded', function() {
 
 	'use strict';
 
