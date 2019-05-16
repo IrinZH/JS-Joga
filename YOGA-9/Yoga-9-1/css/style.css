@@ -463,6 +463,7 @@ header ul li:before {
   border-bottom: 1px solid rgba(199, 126, 48, 0.6);
   font-size: 46px;
   text-align: center;
+  
 }
 .content .counter-block select {
   width: 230px;
@@ -498,7 +499,7 @@ header ul li:before {
   margin-top: 60px;
   width: 250px;
   height: 60px;
-  background-color: transparent; 
+  background-color: transparent;
   border: 1px solid #c78030;
   font-size: 18px;
   color: #c78030;

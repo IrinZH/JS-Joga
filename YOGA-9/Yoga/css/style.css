@@ -27,6 +27,7 @@
           animation-name: splash;
   -webkit-animation-duration: 1.7s;
           animation-duration: 1.7s;
+          background-color: aquamarine;
 }
 @-webkit-keyframes splash {
   from {
@@ -496,7 +497,7 @@ header ul li:before {
   margin-top: 60px;
   width: 250px;
   height: 60px;
-  background-color: transparent;
+  /* background-color: transparent; */
   border: 1px solid #c78030;
   font-size: 18px;
   color: #c78030;
