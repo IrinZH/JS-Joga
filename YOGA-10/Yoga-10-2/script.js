@@ -27,19 +27,20 @@ window.addEventListener('DOMContentLoaded', () => {
     createDiv(text){
       let div = document.createElement('div');
       div.style.cssText = `height: ${this.height}; width: ${this.width}; background-color: ${this.bg}; font-size: ${this.fontSize}; text-align: ${this.textAlign}`;
+  
       document.body.appendChild(div);
       div.innerHTML = text;
     }  
   }
-  let newDiv = new Options(`100px`, `100%`, `pink`, `28px`, `center`);
+  let newDiv = new Options('50px', '100%', 'pink', '28px', 'center');
   newDiv.createDiv('Привет!');
-  newDiv = new Options(`100px`, `100%`, `lightgray`, `26px`, `center`);
+  newDiv = new Options('50px', '100%', 'lightgray', '26px', 'center');
   newDiv.createDiv('Hello world!');
-  newDiv = new Options(`100px`, `100%`, `lightblue`, `24px`, `center`);
+  newDiv = new Options('50px', '100%', 'lightblue', '24px', 'center');
   newDiv.createDiv('Мир, труд, май!');
-  newDiv = new Options(`100px`, `100%`, `beige`, `22px`, `center`);
+  newDiv = new Options('50px', '100%', 'beige', '22px', 'center');
   newDiv.createDiv('');
-
+  
 });
   
 
