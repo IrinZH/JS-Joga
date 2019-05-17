@@ -158,8 +158,16 @@ let form = document.querySelector('.main-form'),
 // валидация номера телефона
 		document.body.addEventListener('input', (event) => {
 			let target = event.target;
-			if (target.getAttribute('type') === 'tel') {
-			target.value = target.value.replace(/[^0-9+]/, '');
+				if (target.getAttribute('type') === 'tel') {
+				target.value = target.value.replace(/[^0-9] /, '');
+				if (target.value.length === 1) {
+				target.value = ('+' + target.value);
+				}
+				if (target.value.length > 11) {
+				// target.pattern ="[+0-9]{11}"; 
+				target.value = (target.value).slice(11);
+				}	
 			}
 		});
+		
 	});
