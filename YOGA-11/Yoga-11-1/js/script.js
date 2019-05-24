@@ -162,9 +162,9 @@ window.addEventListener('DOMContentLoaded', () => { // window.addEventListener('
 	};
 
 	document.body.addEventListener('submit', (event) => { //submit вешается на форму, а не на кнопку, в данном случае на обезличенный документ!!!!
-		if (event.target.className == "main-form" || event.target.id == "form") {
+		// if (event.target.className == "main-form" || event.target.id == "form") { //в данном случае можно без условия на определенные формы
 			event.preventDefault(); //отмена действия браузера по умолчанию при нажатии на кнопку
 			sendForm(event.target);
-		}
+		// }
 	});
 });
