@@ -204,7 +204,7 @@ function form() {
 				let json = JSON.stringify(obj);
 				request.send(json);
 				// request.send(formData);
-				console.log(json);
+				// console.log(json);
 			});
 		}
 		
@@ -212,7 +212,7 @@ function form() {
 			for (let i = 0; i < input.length; i++) {
 				input[i].value = '';
 			}
-		}
+		};
 	
 		postData(formData)
 			.then(() => statusMessage.innerHTML = message.loading)
@@ -231,8 +231,7 @@ function form() {
 		// }
 	});
 }
-  module.exports = form;  
-
+module.exports = form;
 
 
 /***/ }),
@@ -255,13 +254,14 @@ let overlay = document.querySelector('.overlay'),
 		el.classList[classListMethod]('more-splash');
 		document.body.style.overflow = overflowStatus;
 	};
-
 	document.body.addEventListener('click', event => {
 		let target = event.target;
 
 		if (target.classList.contains('more') || target.classList.contains('description-btn')) bindModal('block', 'hidden', 'add', target);
-		if (target.classList.contains('popup-close')) bindModal('none', '', 'remove');
-		statusMessage.innerHTML = ""; //при закрытии модального окна очищаем статусмесседж
+		if (target.classList.contains('popup-close')) {
+			bindModal('none', '', 'remove');
+			overlay.querySelector('.status').textContent = ""; //при закрытии модального окна очищаем статусмесседж
+		}
 		// console.log(target);
 	});
 }
@@ -392,7 +392,7 @@ module.exports = tabs;
 /***/ (function(module, exports) {
 
 function timer() {
-let deadline = 'May 29 2019 07:00:00 GMT+03:00';
+let deadline = 'May 30 2019 07:00:00 GMT+03:00';
 
 const getTimeRemaining = (endtime) => { //function getTimeRemaining(endtime) {
   let t = Date.parse(endtime) - Date.parse(new Date()),

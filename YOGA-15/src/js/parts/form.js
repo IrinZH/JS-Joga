@@ -53,7 +53,7 @@ function form() {
 				let json = JSON.stringify(obj);
 				request.send(json);
 				// request.send(formData);
-				console.log(json);
+				// console.log(json);
 			});
 		}
 		
@@ -61,7 +61,7 @@ function form() {
 			for (let i = 0; i < input.length; i++) {
 				input[i].value = '';
 			}
-		}
+		};
 	
 		postData(formData)
 			.then(() => statusMessage.innerHTML = message.loading)
@@ -80,5 +80,4 @@ function form() {
 		// }
 	});
 }
-  module.exports = form;  
-
+module.exports = form;

@@ -9,13 +9,14 @@ let overlay = document.querySelector('.overlay'),
 		el.classList[classListMethod]('more-splash');
 		document.body.style.overflow = overflowStatus;
 	};
-
 	document.body.addEventListener('click', event => {
 		let target = event.target;
 
 		if (target.classList.contains('more') || target.classList.contains('description-btn')) bindModal('block', 'hidden', 'add', target);
-		if (target.classList.contains('popup-close')) bindModal('none', '', 'remove');
-		statusMessage.innerHTML = ""; //при закрытии модального окна очищаем статусмесседж
+		if (target.classList.contains('popup-close')) {
+			bindModal('none', '', 'remove');
+			overlay.querySelector('.status').textContent = ""; //при закрытии модального окна очищаем статусмесседж
+		}
 		// console.log(target);
 	});
 }
